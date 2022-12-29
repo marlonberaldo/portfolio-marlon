@@ -30,9 +30,9 @@ export default function About() {
   }, []);
 
   return (
-    <section className='tw-max-w-[1280px] tw-mx-auto tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-justify-between tw-pt-40 md:tw-pt-20 lg:tw-pt-28 md:tw-py-16 md:tw-mt-0 tw-mb-10'>
+    <section className='tw-max-w-[1280px] tw-mx-auto tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-justify-between tw-pt-32 md:tw-pt-20 lg:tw-pt-28 md:tw-py-16 md:tw-mt-0'>
       <div className='md:tw-w-[40%] tw-relative tw-flex tw-items-center tw-justify-center'>
-        <div className='tw-h-[300px] lg:tw-h-[400px] tw-w-[300px] lg:tw-w-[400px] tw-absolute tw-bg-marrom tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
+        <div className='tw-h-[300px] lg:tw-h-[400px] tw-w-[300px] lg:tw-w-[400px] tw-absolute tw-bg-marrom tw-top-10 tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
         <img src="/images/bichin.png" alt="" className='tw-z-30 avatar' />
       </div>
       <div className='tw-w-[90%] tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 tw-items-center tw-text-center'>

@@ -58,7 +58,7 @@ export default function Jobs() {
   const { lang } = useContext(LanguageContext);
   const [qtde, setQtde] = useState(4);
   return (
-    <section className="tw-max-w-[1280px] tw-mx-auto tw-flex tw-flex-col tw-items-center">
+    <section className="tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-flex tw-flex-col tw-items-center">
       <div className='tw-flex tw-flex-col tw-items-center'>
         <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.servicos.oferta : en.pages.index.servicos.oferta}</span>
         <div className='tw-flex tw-items-center tw-gap-2'>
@@ -68,14 +68,14 @@ export default function Jobs() {
           </i>
         </div>
       </div>
-      <div className={`tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-center tw-gap-3 tw-my-10`}>
+      <div className={`tw-flex tw-w-full tw-flex-col md:tw-flex-row tw-items-center tw-justify-center tw-gap-3 tw-my-10`}>
         {
           jobs.slice(0, qtde).map((j, i) => {
             return (
-              <div className="tw-relative tw-group tw-cursor-pointer tw-rounded-tr-[30px] tw-rounded-tl-[7px] tw-rounded-bl-[30px] tw-rounded-br-[7px]" key={i}>
-                <img src={j.image} alt="" className="tw-w-[300px] tw-mx-auto md:tw-w-[100px] lg:tw-w-[140px] tw-h-[80px] md:tw-h-[400px] group-hover:tw-h-[200px] group-hover:md:tw-h-[400px] tw-opacity-50 group-hover:tw-blur-[2px] tw-rounded-tr-[30px] tw-rounded-tl-[7px] tw-rounded-bl-[30px] tw-rounded-br-[7px] tw-object-center group-hover:tw-object-cover group-hover:md:tw-w-[400px] group-hover:lg:tw-w-[500px] tw-ease-linear tw-duration-300 md:tw-duration-500 tw-object-cover" />
+              <div className="tw-relative tw-w-full md:tw-w-auto tw-group tw-cursor-pointer tw-rounded-tr-[30px] tw-rounded-tl-[7px] tw-rounded-bl-[30px] tw-rounded-br-[7px]" key={i}>
+                <img src={j.image} alt="" className="tw-w-full tw-mx-auto md:tw-w-[100px] lg:tw-w-[140px] tw-h-[80px] md:tw-h-[400px] group-hover:tw-h-[200px] group-hover:md:tw-h-[400px] tw-opacity-50 group-hover:tw-blur-[2px] tw-rounded-tr-[30px] tw-rounded-tl-[7px] tw-rounded-bl-[30px] tw-rounded-br-[7px] tw-object-center group-hover:tw-object-cover group-hover:md:tw-w-[400px] group-hover:lg:tw-w-[500px] tw-ease-linear tw-duration-300 md:tw-duration-500 tw-object-cover" />
                 <div className="tw-flex md:!tw-min-h-[80px] tw-flex-col tw-items-center tw-absolute tw-bottom-0 md:tw-bottom-12 group-hover:tw-bottom-5 group-hover:md:tw-bottom-20 tw-w-full">
-                  <a href={j.link} target="_blank" rel="noreferrer" className="tw-flex tw-items-center group-hover:tw-justify-center md:-tw-rotate-90 group-hover:tw-rotate-0 tw-ease-linear tw-duration-300 tw-text-center tw-w-[80%] tw-whitespace-nowrap tw-text-white tw-font-extrabold tw-text-xl md:tw-text-2xl">
+                  <a href={j.link} target="_blank" rel="noreferrer" className="tw-flex tw-items-center tw-justify-center md:tw-justify-start group-hover:tw-justify-center md:-tw-rotate-90 group-hover:tw-rotate-0 tw-ease-linear tw-duration-300 tw-text-center tw-w-[80%] tw-whitespace-nowrap tw-text-white tw-font-extrabold tw-text-xl md:tw-text-2xl">
                     <span>{j.title}</span>
                     <i className='-tw-mb-1 tw-opacity-0 group-hover:tw-opacity-100 tw-ease-linear tw-duration-300'><MdOutlineKeyboardArrowRight /></i>
                   </a>

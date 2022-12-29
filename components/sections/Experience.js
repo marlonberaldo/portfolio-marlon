@@ -43,7 +43,7 @@ export default function Experience() {
   // console.log(inicio);
   const { lang } = useContext(LanguageContext)
   return (
-    <section className='tw-max-w-[1280px] tw-w-[90%] md:tw-w-[80%] lg:tw-w-full tw-mx-auto tw-my-20'>
+    <section className='tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-my-10 md:tw-my-20'>
       <div className='tw-flex tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
         {/* esquerda */}
         <div className='tw-relative tw-overflow-hidden tw-flex tw-items-center tw-w-full lg:tw-w-[60%] tw-px-6 tw-py-10 md:tw-py-6 tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-z-20'>
@@ -86,12 +86,12 @@ export default function Experience() {
           </div>
         </div>
         {/* direita */}
-        <div className='tw-w-full lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-end tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-tl tw-from-preto tw-to-cinza tw-px-6 tw-py-10 md:tw-py-6'>
+        <div className='tw-w-full lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-end tw-rounded-[30px] lg:tw-border-t-2 tw-border-b-2 lg:tw-border-b-0 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-tl tw-from-preto tw-to-cinza tw-px-6 tw-py-10 md:tw-py-6'>
           <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao} &</span>
           <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? pt.pages.index.experiencia.MinhaExperiencia : en.pages.index.experiencia.MinhaExperiencia}</h1>
           <p className='tw-text-base tw-leading-[110%] tw-text-center lg:tw-text-start'>{lang ? pt.pages.index.experiencia.texto : en.pages.index.experiencia.texto}</p>
         </div>
-        <div className='tw-h-[400px] md:tw-h-[400px] tw-w-[400px] tw-z-0 md:tw-w-[400px] tw-absolute tw-right-[10%] lg:tw-right-[20%] tw-bg-marrom tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
+        <div className='tw-h-[300px] md:tw-h-[400px] tw-w-[300px] tw-z-0 md:tw-w-[400px] tw-absolute tw-right-[10%] lg:tw-right-[20%] tw-bg-marrom tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
       </div>
     </section>
   )
