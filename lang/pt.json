@@ -1,0 +1,56 @@
+{
+  "pages": {
+    "index": {
+      "sobre": {
+        "intro": "Acadêmico de Engenharia de Computação - UEPG, entusiasta da tecnologia e skatista nas horas vagas. À procura de recursos e conhecimentos na área da tecnologia, sempre buscando maior evolução nos âmbitos da vida.",
+        "botao": "Entre em contato"
+      },
+      "experiencia": {
+        "qualificacao": "Qualificações",
+        "MinhaExperiencia": "Minha experiência",
+        "texto": "Ferramentas que utilizo na criação de sites e apps.",
+        "DevWeb": "Desenvolvimento Web",
+        "conferencia": "Confira aqui alguns certificados",
+        "formacao": {
+          "titulo": "Formação",
+          "if": {
+            "nome": "Instituto Federal do Paraná",
+            "curso": "Técnico em Agroecologia",
+            "tempo": "(2015-2018)"
+          },
+          "uepg": {
+            "nome": "Universidade Estadual de Ponta Grossa",
+            "curso": "Eng. de Computação",
+            "tempo": "(2020-atual)"
+          }
+        },
+        "experiencia": {
+          "titulo": "Experiência",
+          "ade": {
+            "nome": "Agência Ade!",
+            "cargo": "Desenvolvedor Web",
+            "tempo": "(Setembro-atual)"
+          }
+        }
+      },
+      "servicos": {
+        "oferta": "O que posso oferecer?",
+        "servico": "Serviços"
+      }
+    },
+    "contato": {
+      "preTitulo": "Get in touch",
+      "titulo": "Entre em contato",
+      "placeholders": {
+        "nome": "Nome",
+        "email": "Seu melhor email",
+        "mensagem": "Escreva aqui qual serviço deseja, peça orçamentos, ou envie suas dúvidas.. Ficarei feliz em ajudar :)"
+      },
+      "botao": "Enviar Solicitação"
+    }
+  },
+  "whatsApp": "Olá,%20tenho%20interesse%20em%20fazer%20um%20novo%20site%20da%20hora",
+  "erro": "Parece que você se perdeu! Talvez essa página ainda não exista..",
+  "top": "Início",
+  "footer": "Todos os direitos reservados."
+}

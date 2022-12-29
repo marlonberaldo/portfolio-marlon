@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "index": {
+      "sobre": {
+        "intro": "Computer Engineering Student - UEPG (Brazil), technology enthusiast and skateboarder in my free time. Looking for resources and knowledge in the area of technology, always looking for greater evolution in the areas of life.",
+        "botao": "Get in touch"
+      },
+      "experiencia": {
+        "qualificacao": "Qualifications",
+        "MinhaExperiencia": "My experience",
+        "DevWeb": "Web Development",
+        "conferencia": "Check some certificates here",
+        "formacao": {
+          "titulo": "Education",
+          "if": {
+            "nome": "Federal Institute of Paraná",
+            "curso": "Technician in Agroecology",
+            "tempo": "(2015-2018)"
+          },
+          "uepg": {
+            "nome": "State University of Ponta Grossa",
+            "curso": "Computer Engineering",
+            "tempo": "(2020-now)"
+          }
+        },
+        "experiencia": {
+          "titulo": "Experience",
+          "ade": {
+            "nome": "Agency Ade!",
+            "cargo": "Web Developer ",
+            "tempo": "(September-now)"
+          }
+        }
+      },
+      "servicos": {
+        "oferta": "What can I offer?",
+        "servico": "Services"
+      }
+    },
+    "contato": {
+      "preTitulo": "Entre em contato",
+      "titulo": "Get in touch",
+      "placeholders": {
+        "nome": "Name",
+        "email": "Your best email",
+        "mensagem": "Write here which service you want, ask for quotes, or send your questions.. I'll be happy to help :)"
+      },
+      "botao": "Send Request"
+    }
+  },
+  "whatsApp": "Hello,%20Im%20interested%20in%20making%20a%20new%20awesome%20website",
+  "erro": "Oh no, looks like you got lost! Perhaps this page doesn't exist yet..",
+  "top": "Start",
+  "footer": "All rights reserved."
+}
