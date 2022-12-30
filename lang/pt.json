@@ -2,13 +2,13 @@
   "pages": {
     "index": {
       "sobre": {
-        "intro": "Acadêmico de Engenharia de Computação - UEPG, entusiasta da tecnologia e skatista nas horas vagas. À procura de recursos e conhecimentos na área da tecnologia, sempre buscando maior evolução nos âmbitos da vida.",
+        "intro": "Acadêmico de Engenharia de Computação, entusiasta da tecnologia e skatista nas horas vagas. À procura de recursos e conhecimentos na área da tecnologia, sempre buscando maior evolução nos âmbitos da vida.",
         "botao": "Entre em contato"
       },
       "experiencia": {
         "qualificacao": "Qualificações",
         "MinhaExperiencia": "Minha experiência",
-        "texto": "Ferramentas que utilizo na criação de sites e apps.",
+        "texto": "Atualmente cursando Engenharia de Computação - UEPG, curso pelo qual despertei interesse por programação.",
         "DevWeb": "Desenvolvimento Web",
         "conferencia": "Confira aqui alguns certificados",
         "formacao": {

@@ -46,12 +46,12 @@ export default function Experience() {
     <section className='tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-my-10 md:tw-my-20'>
       <div className='tw-flex tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
         {/* esquerda */}
-        <div className='tw-relative tw-overflow-hidden tw-flex tw-items-center tw-w-full lg:tw-w-[60%] tw-px-6 tw-py-10 md:tw-py-6 tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-z-20'>
-          <img src="/images/mapbase.png" alt="" className='tw-opacity-[10%] tw-absolute tw-left-0 tw-z-0' />
+        <div className='tw-relative tw-group tw-overflow-hidden tw-flex tw-items-center tw-w-full lg:tw-w-[60%] tw-px-6 tw-py-10 md:tw-py-6 tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-z-20'>
+          <img src="/images/mapbase.png" alt="" className='tw-opacity-[10%] group-hover:tw-opacity-[13%] tw-ease-linear tw-duration-300 tw-absolute tw-left-0 tw-z-0' />
           <div className='tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center lg:tw-items-start md:tw-justify-evenly tw-z-20'>
             <div className='tw-flex tw-flex-col'>
               <span className='tw-text-2xl tw-font-black tw-text-white tw-text-center'>{lang ? pt.pages.index.experiencia.DevWeb : en.pages.index.experiencia.DevWeb}</span>
-              <div className="tw-grid tw-grid-cols-2 tw-gap-y-4 tw-p-5 tw-md:p-10 tw-text-white">
+              <div className="tw-grid tw-grid-cols-2 tw-gap-y-4 tw-py-2 md:tw-py-5 md:tw-px-2 tw-text-white">
                 {
                   tecnologies.map((t, i) => {
                     return (
@@ -73,15 +73,23 @@ export default function Experience() {
                 </a>
               </div>
             </div>
-            <div className='tw-flex tw-flex-col tw-items-center'>
-              <span className='tw-text-2xl tw-font-black tw-text-white'>{lang ? pt.pages.index.experiencia.experiencia.titulo : en.pages.index.experiencia.experiencia.titulo}</span>
-              <div className='tw-flex tw-flex-col tw-items-center tw-p-5 tw-md:p-10'>
-                <span className='tw-text-white tw-font-black'>{lang ? pt.pages.index.experiencia.experiencia.ade.nome : en.pages.index.experiencia.experiencia.ade.nome}</span>
+            <div className='tw-flex tw-flex-col tw-items-center tw-pt-5 md:tw-pt-0'>
+              <span className='tw-text-2xl tw-font-black tw-text-white tw-text-center'>{lang ? pt.pages.index.experiencia.experiencia.titulo : en.pages.index.experiencia.experiencia.titulo}</span>
+              <div className='tw-flex tw-flex-col tw-items-center tw-py-2 md:tw-py-5 tw-text-center'>
+                <span className='tw-text-white tw-font-black tw-pb-1 tw-leading-[110%]'>{lang ? pt.pages.index.experiencia.formacao.uepg.nome : en.pages.index.experiencia.formacao.uepg.nome}</span>
                 <div className='tw-flex tw-flex-col tw-items-center lg:tw-items-center'>
-                  <span>{lang ? pt.pages.index.experiencia.experiencia.ade.cargo : en.pages.index.experiencia.experiencia.ade.cargo}</span>
-                  <span>{lang ? pt.pages.index.experiencia.experiencia.ade.tempo : en.pages.index.experiencia.experiencia.ade.tempo}</span>
+                  <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.formacao.uepg.curso : en.pages.index.experiencia.formacao.uepg.curso}</span>
+                  <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.formacao.uepg.tempo : en.pages.index.experiencia.formacao.uepg.tempo}</span>
                 </div>
               </div>
+              <div className='tw-flex tw-flex-col tw-items-center tw-py-2 '>
+                <span className='tw-text-white tw-font-black tw-mb-1 tw-leading-[110%]'>{lang ? pt.pages.index.experiencia.experiencia.ade.nome : en.pages.index.experiencia.experiencia.ade.nome}</span>
+                <div className='tw-flex tw-flex-col tw-items-center lg:tw-items-center'>
+                  <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.experiencia.ade.cargo : en.pages.index.experiencia.experiencia.ade.cargo}</span>
+                  <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.experiencia.ade.tempo : en.pages.index.experiencia.experiencia.ade.tempo}</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
