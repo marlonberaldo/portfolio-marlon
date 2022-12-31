@@ -8,7 +8,6 @@ export default function Header() {
   const { lang, setLang } = useContext(LanguageContext);
   const [burger, setBurger] = useState(false);
   const router = useRouter();
-  console.log(router.asPath);
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -22,12 +21,12 @@ export default function Header() {
   return (
     <>
       <header className={`tw-max-w-[1280px] tw-w-full tw-mx-auto tw-fixed md:tw-static tw-top-0  tw-flex tw-justify-between tw-items-center tw-py-5 tw-px-5 ${burger ? "tw-bg-none" : "tw-bg-gradient-to-b"} md:tw-bg-none animation tw-to-preto tw-from-cinza tw-z-[100]`}>
-        <a href="#" className={`${router.asPath != "/contato" ? "" : "tw-hidden"} titulo tw-font-black tw-z-50`}>
+        <a href="#" className={`${router.asPath == "/" ? "" : "tw-hidden"} titulo tw-font-black tw-z-50`}>
           <span className="tw-text-marrom">{"</M"}</span>
           <span className="tw-text-bege">arlon.b</span>
           <span className="tw-text-marrom">{">"}</span>
         </a>
-        <Link href="/" className={`${router.asPath == "/contato" ? "" : "tw-hidden"} titulo tw-font-black tw-z-50`}>
+        <Link href="/" className={`${router.asPath != "/" ? "" : "tw-hidden"} titulo tw-font-black tw-z-50`}>
           <span className="tw-text-marrom">{"</M"}</span>
           <span className="tw-text-bege">arlon.b</span>
           <span className="tw-text-marrom">{">"}</span>

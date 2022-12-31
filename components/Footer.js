@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <div className="tw-max-w-[1280px] tw-w-[90%] lg:tw-w-full tw-mx-auto tw-flex tw-flex-col tw-items-center">
       <div className="tw-flex tw-flex-col md:tw-flex-row tw-gap-5 tw-text-center tw-items-center tw-justify-evenly tw-w-full tw-my-10 ">
-        <span className="tw-text-sm md:tw-text-xl tw-font-black tw-text-white">{lang ? "Entre em contato, ficarei feliz em ajudar!" : "Get in touch, i'll be happy to help!"}</span>
+        <span className="tw-text-sm md:tw-text-xl tw-font-black tw-text-white">{lang ? "Mande uma mensagem, ficarei feliz em ajudar!" : "Send a message, i'll be happy to help!"}</span>
         <div className="tw-relative">
           <Link href="/contato" className="tw-bg-gradient-to-b tw-z-20 tw-from-preto tw-via-cinza tw-to-gray-700 tw-px-8 tw-py-2 tw-rounded-full tw-border-b-2 hover:tw-border-bege hover:-tw-translate-y-1 tw-shadow-lg animation tw-border-marrom tw-text-white">{lang ? pt.pages.index.sobre.botao : en.pages.index.sobre.botao}</Link>
           <div className="tw-w-full tw-h-[5px] tw-bg-marrom tw-blur-lg tw-z-10 tw-bottom-0 tw-absolute"></div>

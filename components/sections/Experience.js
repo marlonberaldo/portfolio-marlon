@@ -47,7 +47,7 @@ export default function Experience() {
       <div className='tw-flex tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
         {/* esquerda */}
         <div className='tw-relative tw-group tw-overflow-hidden tw-flex tw-items-center tw-w-full lg:tw-w-[60%] tw-px-6 tw-py-10 md:tw-py-6 tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-z-20'>
-          <img src="/images/mapbase.png" alt="" className='tw-opacity-[10%] group-hover:tw-opacity-[13%] tw-ease-linear tw-duration-300 tw-absolute tw-left-0 tw-z-0' />
+          <img src="/images/mapbase.png" alt="" className='tw-opacity-[10%] group-hover:tw-opacity-[16%] tw-ease-linear tw-duration-300 tw-absolute tw-left-0 tw-z-0' />
           <div className='tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center lg:tw-items-start md:tw-justify-evenly tw-z-20'>
             <div className='tw-flex tw-flex-col'>
               <span className='tw-text-2xl tw-font-black tw-text-white tw-text-center'>{lang ? pt.pages.index.experiencia.DevWeb : en.pages.index.experiencia.DevWeb}</span>

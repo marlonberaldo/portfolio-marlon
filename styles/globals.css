@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply tw-scroll-smooth tw-font-mono tw-text-gray-400;
+    @apply tw-scroll-smooth tw-font-mono tw-text-gray-400 tw-bg-gradient-to-br tw-to-preto tw-from-cinza;
   }
 
   .titulo {

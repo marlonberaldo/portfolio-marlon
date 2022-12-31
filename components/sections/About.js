@@ -28,7 +28,7 @@ export default function About() {
     window.removeEventListener('scroll', onScroll);
     window.addEventListener('scroll', onScroll, { passive: true });
   }, []);
-
+  console.log(lang);
   return (
     <section className='tw-max-w-[1280px] tw-mx-auto tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-justify-between tw-pt-32 md:tw-pt-20 lg:tw-pt-28 md:tw-py-16 md:tw-mt-0'>
       <div className='md:tw-w-[40%] tw-relative tw-flex tw-items-center tw-justify-center'>

@@ -9,7 +9,7 @@
         "qualificacao": "Qualifications",
         "MinhaExperiencia": "My experience",
         "DevWeb": "Web Development",
-        "conferencia": "Check some certificates here",
+        "conferencia": "Check some certificates",
         "formacao": {
           "titulo": "Education",
           "if": {

@@ -10,7 +10,7 @@
         "MinhaExperiencia": "Minha experiência",
         "texto": "Atualmente cursando Engenharia de Computação - UEPG, curso pelo qual despertei interesse por programação.",
         "DevWeb": "Desenvolvimento Web",
-        "conferencia": "Confira aqui alguns certificados",
+        "conferencia": "Confira alguns certificados",
         "formacao": {
           "titulo": "Formação",
           "if": {

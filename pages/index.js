@@ -15,17 +15,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="tw-bg-gradient-to-br tw-to-preto tw-from-cinza tw-w-full">
-
-        <Header />
-        <HeaderFixo />
-        <About />
-        <Experience />
-        <Jobs />
-        <Footer />
-
-      </section>
-
+      <HeaderFixo />
+      <Header />
+      <About />
+      <Experience />
+      <Jobs />
+      <Footer />
     </>
   )
 }
