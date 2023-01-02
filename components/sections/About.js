@@ -28,14 +28,13 @@ export default function About() {
     window.removeEventListener('scroll', onScroll);
     window.addEventListener('scroll', onScroll, { passive: true });
   }, []);
-  console.log(lang);
   return (
     <section className='tw-max-w-[1280px] tw-mx-auto tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-justify-between tw-pt-32 md:tw-pt-20 lg:tw-pt-28 md:tw-py-16 md:tw-mt-0'>
       <div className='md:tw-w-[40%] tw-relative tw-flex tw-items-center tw-justify-center'>
         <div className='tw-h-[300px] lg:tw-h-[400px] tw-w-[300px] lg:tw-w-[400px] tw-absolute tw-bg-marrom tw-top-10 tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
         <img src="/images/bichin.png" alt="" className='tw-z-30 avatar' />
       </div>
-      <div className='tw-w-[90%] tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 tw-items-center tw-text-center'>
+      <div className='tw-w-full tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 tw-items-center tw-text-center'>
         <div className='tw-relative tw-flex tw-justify-center'>
           <span className='tw-absolute -tw-top-5 md:-tw-top-4 lg:-tw-top-4 tw-w-[90%] sm:tw-w-full md:tw-w-[90%] tw-opacity-20 tw-uppercase tw-text-gray-500 tw-z-10 tw-text-5xl tw-leading-[100%] tw-font-bold tw-text-center'>Marlon Beraldo</span>
           <span className='tw-uppercase tw-text-marrom tw-text-6xl tw-leading-[90%] tw-font-black tw-z-20'>Marlon Beraldo</span>

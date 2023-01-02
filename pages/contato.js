@@ -35,8 +35,9 @@ export default function Contato() {
     <>
       <Head>
         <title>Marlon.b | {lang ? "Contato" : "Contact"}</title>
+        <link rel="icon" type="image/png" href="/icone.png" />
       </Head>
-      <section className="tw-bg-gradient-to-br tw-text-white tw-from-preto tw-to-cinza tw-w-full">
+      <section className="tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-w-full">
         <Header />
         <div className="tw-h-[100vh] tw-pt-10 md:tw-pt-0 md:tw-h-[calc(100vh-76px)] tw-flex tw-flex-col tw-justify-center tw-items-center">
           <span className="tw-text-xs tw-text-gray-400 -tw-mb-1">{lang ? pt.pages.contato.preTitulo : en.pages.contato.preTitulo}</span>
@@ -49,7 +50,7 @@ export default function Contato() {
             <input className='input' type="text" name='name' placeholder={lang ? pt.pages.contato.placeholders.nome : en.pages.contato.placeholders.nome} required autoComplete='off' />
             <input className='input' type="email" name='email' placeholder={lang ? pt.pages.contato.placeholders.email : en.pages.contato.placeholders.email} required autoComplete='off' />
             <textarea className='input tw-border-t-2 tw-border-r-2 tw-border-marrom' name='message' rows='6' style={{ resize: "none" }} placeholder={lang ? pt.pages.contato.placeholders.mensagem : en.pages.contato.placeholders.mensagem} required autoComplete='off'></textarea>
-            <button type='submit' className='botao tw-mx-auto tw-w-full tw-mt-4' >{lang ? pt.pages.contato.botao : en.pages.contato.botao}</button>
+            <button type='submit' className='botao tw-mx-auto tw-w-full tw-mt-4 tw-text-white' >{lang ? pt.pages.contato.botao : en.pages.contato.botao}</button>
           </form>
           <div className="tw-flex tw-items-center tw-gap-x-5 tw-mt-5">
             <div className="tw-h-[2px] tw-rounded-full tw-bg-gray-400 tw-w-[50px]"></div>

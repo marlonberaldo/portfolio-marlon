@@ -7,6 +7,9 @@ module.exports = {
   prefix: "tw-",
   theme: {
     extend: {
+      screens: {
+        "3xl": "1980px"
+      },
       colors: {
         "preto": "#17181D",
         "cinza": "#292C35",

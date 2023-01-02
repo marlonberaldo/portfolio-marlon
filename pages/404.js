@@ -15,6 +15,7 @@ export default function Page404() {
     <>
       <Head>
         <title>Marlon.b | {lang ? "Não encontrada" : "Not found"}</title>
+        <link rel="icon" type="image/png" href="/icone.png" />
       </Head>
       <Header />
       <section className="tw-bg-gradient-to-br tw-from-cinza tw-to-preto tw-h-[100vh] md:tw-h-[calc(100vh-76px)]">
