@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { LanguageContext } from "../utils/context/language"
@@ -15,7 +15,16 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Contato() {
   const { lang } = useContext(LanguageContext);
+  const [load, setLoad] = useState(false);
 
+  function timer() {
+    setTimeout(() => {
+      setLoad(true)
+    }, 300)
+  }
+  useEffect(() => {
+    timer()
+  }, [])
   const form = useRef();
 
   const enviarEmail = (e) => {
@@ -39,9 +48,9 @@ export default function Contato() {
       </Head>
       <section className="tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-w-full">
         <Header />
-        <div className="tw-h-[100vh] tw-pt-10 md:tw-pt-0 md:tw-h-[calc(100vh-76px)] tw-flex tw-flex-col tw-justify-center tw-items-center">
+        <div className={`${load ? "tw-scale-100" : "tw-scale-0"} tw-ease-linear tw-duration-300 tw-h-[100vh] tw-pt-10 md:tw-pt-0 md:tw-h-[calc(100vh-76px)] tw-flex tw-flex-col tw-justify-center tw-items-center`}>
           <span className="tw-text-xs tw-text-gray-400 -tw-mb-1">{lang ? pt.pages.contato.preTitulo : en.pages.contato.preTitulo}</span>
-          <h1 className="titulo tw-text-5xl">{lang ? "Contato" : "Contact"}</h1>
+          <h1 className="titulo tw-text-5xl tw-text-white">{lang ? "Contato" : "Contact"}</h1>
           <form
             ref={form}
             onSubmit={enviarEmail}
