@@ -52,11 +52,21 @@ const jobs = [
       <GrWordpress />
     ]
   },
+  {
+    title: "Vitalle",
+    link: "https://vitalle-psi.vercel.app/",
+    image: "/images/jobs/vitalle.png",
+    techs: [
+      <TbBrandNextjs />,
+      <SiTailwindcss />,
+      <GrWordpress />
+    ]
+  },
 ]
 
 export default function Jobs() {
   const { lang } = useContext(LanguageContext);
-  const [qtde, setQtde] = useState(4);
+  const [qtde, setQtde] = useState(5);
   return (
     <section className="tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-flex tw-flex-col tw-items-center">
       <div className='tw-flex tw-flex-col tw-items-center'>
@@ -89,7 +99,7 @@ export default function Jobs() {
           })
         }
       </div>
-      <button className={`${jobs.length > qtde ? "" : "tw-hidden"} botao tw-text-white`} onClick={() => setQtde(qtde + 4)}>{lang ? "Ver mais" : "See more"}</button>
+      <button className={`${jobs.length > qtde ? "" : "tw-hidden"} botao tw-text-white`} onClick={() => setQtde(qtde + 5)}>{lang ? "Ver mais" : "See more"}</button>
     </section>
   )
 }
