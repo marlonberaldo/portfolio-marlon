@@ -3,13 +3,14 @@ import pt from '../../lang/pt.json'
 import en from '../../lang/en.json'
 import { useContext, useState } from 'react'
 import { LanguageContext } from '../../utils/context/language'
-import { FaHtml5 } from 'react-icons/fa'
+import { FaHtml5, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
-import { IoIosArrowBack, IoIosArrowForward, IoLogoCss3 } from 'react-icons/io'
-import { IoLogoJavascript } from 'react-icons/io'
+import { IoLogoJavascript, IoLogoCss3, IoLogoWhatsapp } from 'react-icons/io'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { SiTailwindcss } from 'react-icons/si'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
+import { HiOutlineMail } from 'react-icons/hi'
+import Link from 'next/link'
 
 const tecnologies = [
   {
@@ -41,8 +42,9 @@ const tecnologies = [
 export default function Experience() {
   var inicio = new Date(2022, 9, 19).getMonth();
   // console.log(inicio);
+
   const { lang } = useContext(LanguageContext)
-  const [exp, setExp] = useState(true);
+  const [exp, setExp] = useState('exp');
   return (
     <section className='tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-my-10 md:tw-my-20'>
       <div className='tw-flex tw-relative tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
@@ -95,20 +97,55 @@ export default function Experience() {
           </div>
         </div>
         {/* direita */}
-        <div className='tw-w-full lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-end tw-rounded-[30px] lg:tw-border-t-2 tw-border-b-2 lg:tw-border-b-0 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-bl tw-from-preto tw-to-cinza tw-px-6 tw-py-8 md:tw-py-10 lg:tw-py-6'>
-          <div id='quali' className={`${exp ? " tw-block" : " tw-hidden"}  tw-duration-300 tw-ease-out tw-opacity-0 tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
-            <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao} &</span>
-            <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? pt.pages.index.experiencia.MinhaExperiencia : en.pages.index.experiencia.MinhaExperiencia}</h1>
-            <p className='tw-text-base tw-leading-[110%] tw-text-center lg:tw-text-start md:tw-w-[90%] lg:tw-w-full'>{lang ? pt.pages.index.experiencia.texto : en.pages.index.experiencia.texto}</p>
+        <div className='tw-w-full lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-center tw-rounded-[30px] lg:tw-border-t-2 tw-border-b-2 lg:tw-border-b-0 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-bl tw-from-preto tw-to-cinza '>
+          <div className='tw-px-6 tw-py-8 md:tw-py-10 lg:tw-py-6 tw-w-full'>
+            <div className={`${exp === 'exp' ? "tw-block" : "tw-hidden"} tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
+              <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao} &</span>
+              <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? pt.pages.index.experiencia.MinhaExperiencia : en.pages.index.experiencia.MinhaExperiencia}</h1>
+              <p className='tw-text-base tw-leading-[110%] tw-text-center lg:tw-text-start md:tw-w-[90%] lg:tw-w-full'>{lang ? pt.pages.index.experiencia.texto : en.pages.index.experiencia.texto}</p>
+            </div>
+            <div className={`${exp === 'quali' ? "tw-block" : "tw-hidden"} tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
+              <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.MinhaExperiencia : en.pages.index.experiencia.MinhaExperiencia} &</span>
+              <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao}</h1>
+              <p className='tw-text-base tw-leading-[110%] tw-text-center lg:tw-text-start md:tw-w-[90%] lg:tw-w-full'>{lang ? pt.pages.index.experiencia.tecnologias : en.pages.index.experiencia.tecnologias}</p>
+            </div>
+            <div className={`${exp === 'cont' ? "tw-block" : "tw-hidden"} tw-w-full tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
+              <span className='tw-text-xs -tw-mb-1'>{lang ? "Contact" : "Contato"} &</span>
+              <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? "Contato" : "Contact"}</h1>
+              <div className='tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-gap-2 tw-leading-[110%] tw-text-center lg:tw-text-start md:tw-w-[90%] lg:tw-w-full'>
+                <p className='tw-flex tw-items-center tw-gap-2 hover:tw-text-white animation'>
+                  <i><HiOutlineMail /></i>
+                  <a href="mailto:marlon_beraldo@hotmail.com" className='tw-text-sm'>marlon_beraldo@hotmail.com</a>
+                </p>
+                <p className='tw-flex tw-items-center tw-gap-2 hover:tw-text-white animation'>
+                  <i><FaLinkedinIn /></i>
+                  <a href="https://www.linkedin.com/in/marlon-beraldo-67499820b/" target="_blank" rel="noreferrer" className='tw-text-sm'>Marlon Beraldo</a>
+                </p>
+                <p className='tw-flex tw-items-center tw-gap-2 hover:tw-text-white animation'>
+                  <i><IoLogoWhatsapp /></i>
+                  <a href={`https://wa.me/5542999721435`} target="_blank" rel="noreferrer" className='tw-text-sm'>(42) 9972-1435</a>
+                </p>
+              </div>
+              <p className='tw-text-sm tw-flex tw-flex-col tw-items-center tw-mt-10 md:tw-mt-4 lg:tw-mt-10 tw-w-full tw-gap-2 tw-text-center'>
+                {lang ? "Ou se preferir, mande uma mensagem.." : "Or if you prefer, send a message.."}
+                <Link href="/contato" className='botao tw-text-white'>{lang ? "Contato" : "Contact"}</Link>
+              </p>
+            </div>
           </div>
-          <div id='tech' className={`${exp == false ? "tw-block" : "tw-hidden"} tw-duration-300 tw-ease-out tw-opacity-0 tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
-            <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.MinhaExperiencia : en.pages.index.experiencia.MinhaExperiencia} &</span>
-            <h1 className='tw-text-2xl tw-font-black tw-text-white tw-mb-3'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao}</h1>
-            <p className='tw-text-base tw-leading-[110%] tw-text-center lg:tw-text-start md:tw-w-[90%] lg:tw-w-full'>{lang ? pt.pages.index.experiencia.tecnologias : en.pages.index.experiencia.tecnologias}</p>
-          </div>
-          <div className='tw-flex tw-items-center tw-justify-center tw-gap-1 tw-w-[40%] md:tw-w-[30%] tw-mx-auto tw-mt-5'>
-            <button onClick={() => setExp(true)} className={`${exp ? "tw-bg-gray-400 tw-cursor-default" : "tw-bg-marrom"} ${setTimeout(() => { document.querySelector("#quali").classList.add("tw-opacity-100") }, 200)} tw-text-xl tw-rounded-full tw-w-[30px] tw-h-[4px] tw-duration-300 tw-ease-out`}></button>
-            <button onClick={() => setExp(false)} className={`${!exp ? "tw-bg-gray-400 tw-cursor-default" : "tw-bg-marrom"} ${setTimeout(() => { document.querySelector("#tech").classList.add("tw-opacity-100") }, 200)} tw-text-xl tw-rounded-full tw-w-[30px] tw-h-[4px] tw-duration-300 tw-ease-out`}></button>
+          <div className='tw-flex tw-items-center tw-justify-evenly tw-w-[40%] md:tw-w-[20%] lg:tw-w-[40%] tw-mx-auto tw-mb-8 lg:tw-mb-0'>
+            <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
+              <span className={`${exp === 'exp' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Exp</span>
+              <button onClick={() => setExp('exp')} className={`${exp === 'exp' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+            </div>
+            <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
+              <span className={`${exp === 'quali' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Quali</span>
+              <button onClick={() => setExp('quali')} className={`${exp === 'quali' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+            </div>
+            <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
+              <span className={`${exp === 'cont' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Cont</span>
+              <button onClick={() => setExp('cont')} className={`${exp === 'cont' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+            </div>
+
           </div>
         </div>
         <div className='tw-h-[300px] md:tw-h-[400px] tw-w-[300px] tw-z-0 md:tw-w-[400px] tw-absolute tw-right-[10%] lg:tw-right-[20%] tw-bg-marrom tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>

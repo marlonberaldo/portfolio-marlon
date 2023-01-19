@@ -6,7 +6,12 @@ import HeaderFixo from "../components/HeaderFixo";
 import About from "../components/sections/About";
 import Experience from "../components/sections/Experience";
 import Jobs from "../components/sections/Jobs";
+
 import { LanguageContext } from "../utils/context/language";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-Y9ZM44HY45');
+ReactGA.pageview('/')
 
 export default function Home() {
   const { lang } = useContext(LanguageContext);
