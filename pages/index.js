@@ -8,10 +8,8 @@ import Experience from "../components/sections/Experience";
 import Jobs from "../components/sections/Jobs";
 
 import { LanguageContext } from "../utils/context/language";
-import ReactGA from 'react-ga';
+import { bancoJobs } from "../utils/db/dbJobs";
 
-ReactGA.initialize('G-Y9ZM44HY45');
-ReactGA.pageview('/')
 
 export default function Home() {
   const { lang } = useContext(LanguageContext);
@@ -19,8 +17,13 @@ export default function Home() {
     <>
       <Head>
         <title>Marlon.b | Home</title>
-        <meta name="description" content={lang ? "Portifolio - Marlon Beraldo" : "Web Portifolio - Marlon Beraldo"} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" lang="pt" content="Meu nome é Marlon Beraldo, trabalho como Desenvolvedor Web. " />
+        <meta name="description" lang="en" content="My name is Marlon Beraldo, i work as a Web Developer." />
+        <meta
+          name="keywords"
+          content="Marlon Beraldo, Marlon, Marlon Beraldo Portfolio, Marlon Beraldo Developer, Marlon Beraldo Dev, Marlon Beraldo Desenvolvedor, Marlon Portfolio, Marlon Developer, Marlon Desenvolvedor, Marlon Beraldo Site,  Marlon Beraldo UEPG"
+        />
+        <link rel="canonical" href="https://portfolio-marlon-five.vercel.app" />
         <link rel="icon" type="image/png" href="/icone.png" />
       </Head>
       <HeaderFixo />

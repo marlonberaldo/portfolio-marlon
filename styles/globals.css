@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  html, body {
     @apply tw-scroll-smooth tw-font-mono tw-text-gray-400 tw-bg-gradient-to-br tw-to-preto tw-from-cinza;
   }
 
@@ -31,20 +31,10 @@
   }
 }
 
-.avatar{
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+.borda_texto {
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
 }
 
 ::-webkit-scrollbar {

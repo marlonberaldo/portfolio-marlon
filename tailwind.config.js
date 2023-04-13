@@ -21,6 +21,20 @@ module.exports = {
         'ping-slow': 'ping 3s linear infinite',
         'bounce-slow': 'bounce 1s linear infinite',
         'pulse-slow': 'pulse 6s linear infinite',
+        'avatar': 'float 6s ease-in-out infinite'
+      },
+      keyframes:{
+        float:{
+          '0%':  {
+            transform: 'translatey(0px)',
+          },
+          '50%': {
+            transform: 'translatey(-20px)',
+          },
+          '100%': {
+            transform: 'translatey(0px)',
+          }
+        }
       }
     },
   },

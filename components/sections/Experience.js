@@ -5,9 +5,9 @@ import { useContext, useState } from 'react'
 import { LanguageContext } from '../../utils/context/language'
 import { FaHtml5, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
-import { IoLogoJavascript, IoLogoCss3, IoLogoWhatsapp } from 'react-icons/io'
+import { IoLogoJavascript, IoLogoCss3, IoLogoWhatsapp, IoLogoNodejs } from 'react-icons/io'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { SiTailwindcss } from 'react-icons/si'
+import { SiPhp, SiTailwindcss } from 'react-icons/si'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import Link from 'next/link'
@@ -37,11 +37,18 @@ const tecnologies = [
     icon: <SiTailwindcss />,
     name: "TailWind",
   },
+  {
+    icon: <IoLogoNodejs />,
+    name: "NodeJS",
+  },
+  {
+    icon: <SiPhp />,
+    name: "PHP",
+  },
 ]
 
 export default function Experience() {
   var inicio = new Date(2022, 9, 19).getMonth();
-  // console.log(inicio);
 
   const { lang } = useContext(LanguageContext)
   const [exp, setExp] = useState('exp');
@@ -89,7 +96,7 @@ export default function Experience() {
                 <span className='tw-text-white tw-font-black tw-mb-1 tw-leading-[110%]'>{lang ? pt.pages.index.experiencia.experiencia.ade.nome : en.pages.index.experiencia.experiencia.ade.nome}</span>
                 <div className='tw-flex tw-flex-col tw-items-center lg:tw-items-center'>
                   <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.experiencia.ade.cargo : en.pages.index.experiencia.experiencia.ade.cargo}</span>
-                  <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.experiencia.ade.tempo : en.pages.index.experiencia.experiencia.ade.tempo}</span>
+                  <span className='tw-leading-[110%] tw-text-sm'>({inicio} {lang ? 'meses' : 'months'})</span>
                 </div>
               </div>
 

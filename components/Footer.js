@@ -25,9 +25,11 @@ export default function Footer() {
           <span className="tw-text-bege">arlon.b</span>
           <span className="tw-text-marrom">{">"}</span>
         </span>
-        <span className="tw-text-center tw-my-2 tw-hidden md:tw-flex tw-items-center">
-          &copy; {lang ? pt.footer : en.footer}
-        </span>
+        <div className="tw-text-center tw-my-2 md:tw-my-0 tw-hidden md:tw-flex tw-items-center tw-gap-2">
+          <span>{new Date().getFullYear()}</span>
+          &copy;
+          <span>{lang ? pt.footer : en.footer}</span>
+        </div>
         <div className="tw-flex tw-items-center tw-gap-x-2 tw-text-xl">
           <a href="https://www.linkedin.com/in/marlon-beraldo-67499820b/" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
             <FaLinkedinIn />
@@ -35,9 +37,9 @@ export default function Footer() {
           <a href="https://github.com/marlonberaldo/" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
             <AiFillGithub />
           </a>
-          <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
+          {/* <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
             <AiFillInstagram />
-          </a>
+          </a> */}
         </div>
       </footer>
     </div>

@@ -8,9 +8,10 @@
       "experiencia": {
         "qualificacao": "Qualificações",
         "MinhaExperiencia": "Minha experiência",
-        "texto": "Atualmente cursando Engenharia de Computação - UEPG, curso pelo qual tive meu primeiro contato com programação. Após algum tempo me encontrei no desenvolvimento Web, área na qual me dedico atualmente. Entrei em meu primeiro emprego como estágiario na Agência Ade!, na qual posteriormente vim a ser efetivado.",
+        "texto": "Atualmente cursando Engenharia de Computação - UEPG, curso pelo qual tive meu primeiro contato com programação. Após algum tempo me encontrei no desenvolvimento Web, área na qual me dedico atualmente. Entrei em meu primeiro emprego como estágiario na Agência Ade!, empresa na qual posteriormente vim a ser efetivado.",
         "tecnologias": "Desde meu primeiro projeto busco tecnologias que aumentem a produtividade e melhorem o desempenho das aplicações buscando cada vez mais performance. Assim, procuro utilizar o melhor dos frameworks React e NextJS juntamente com o TailWind CSS, o qual acelera o processo de estilização.",
         "DevWeb": "Desenvolvimento Web",
+        "DevBack": "Back-end",
         "conferencia": "Confira alguns certificados",
         "formacao": {
           "titulo": "Formação",
@@ -22,7 +23,7 @@
           "uepg": {
             "nome": "Universidade Estadual de Ponta Grossa",
             "curso": "Eng. de Computação",
-            "tempo": "(2020-atual)"
+            "tempo": "(2020-2024)"
           }
         },
         "experiencia": {
@@ -30,7 +31,7 @@
           "ade": {
             "nome": "Agência Ade!",
             "cargo": "Desenvolvedor Web",
-            "tempo": "(Setembro-atual)"
+            "tempo": "meses"
           }
         }
       },

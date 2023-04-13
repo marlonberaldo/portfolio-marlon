@@ -58,7 +58,7 @@ export default function Header() {
         </div>
       </header>
 
-      <div className={`tw-fixed !tw-z-40 tw-top-0 md:tw-hidden ${burger ? "tw-translate-y-0" : "tw-translate-y-[-100%]"} tw-bg-gradient-to-t tw-to-cinza tw-from-preto tw-ease-linear tw-duration-300 tw-h-full tw-w-full tw-flex tw-flex-col tw-items-center tw-gap-y-3 tw-justify-center`}>
+      <div className={`tw-fixed !tw-z-40 tw-top-0 md:tw-hidden ${burger ? "tw-translate-y-0" : "tw-translate-y-[-100%]"} tw-bg-gradient-to-t tw-to-cinza tw-from-preto tw-opacity-90 tw-ease-linear tw-duration-300 tw-h-full tw-w-full tw-flex tw-flex-col tw-items-center tw-gap-y-3 tw-justify-center`}>
         <Link href="/" className="hover:tw-opacity-75 animation tw-z-0">
           Home
         </Link>
