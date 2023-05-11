@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { TbBrandNextjs } from 'react-icons/tb'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiTailwindcss } from 'react-icons/si'
+import { SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { GrWordpress } from 'react-icons/gr'
 
 export const bancoJobs = [
@@ -18,19 +18,19 @@ export const bancoJobs = [
       <GrWordpress />
     ]
   },
-  {
-    title: "Gasosa Paranaese",
-    link: "https://gasosa-paranaense.vercel.app/",
-    image: "/images/jobs/gasosa.png",
-    category: ["real", "cate"],
-    descricao: "Portugues baum",
-    description: "English good",
-    techs: [
-      <RiReactjsLine />,
-      <SiTailwindcss />,
-      <GrWordpress />
-    ]
-  },
+  // {
+  //   title: "Gasosa Paranaese",
+  //   link: "https://gasosa-paranaense.vercel.app/",
+  //   image: "/images/jobs/gasosa.png",
+  //   category: ["real", "cate"],
+  //   descricao: "Portugues baum",
+  //   description: "English good",
+  //   techs: [
+  //     <RiReactjsLine />,
+  //     <SiTailwindcss />,
+  //     <GrWordpress />
+  //   ]
+  // },
   {
     title: "Gasosa Institucional",
     link: "https://gasosa-institucional.vercel.app",
@@ -71,16 +71,17 @@ export const bancoJobs = [
     ]
   },
   {
-    title: "Aprendizado",
-    link: "https://curriculo-weld-two.vercel.app/",
-    image: "/images/jobs/gasosa.png",
+    title: "Ecoplac",
+    link: "http://ecoplac.vercel.app/",
+    image: "/images/jobs/ecoplac.png",
     category: ["teste", "cate"],
     descricao: "Portugues baum",
     description: "English good",
     techs: [
       <TbBrandNextjs />,
       <SiTailwindcss />,
-      <GrWordpress />
+      <GrWordpress />,
+      <SiTypescript />
     ]
   },
 ]

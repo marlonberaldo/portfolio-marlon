@@ -7,7 +7,7 @@ import { FaHtml5, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { IoLogoJavascript, IoLogoCss3, IoLogoWhatsapp, IoLogoNodejs } from 'react-icons/io'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { SiPhp, SiTailwindcss } from 'react-icons/si'
+import { SiPhp, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import Link from 'next/link'
@@ -32,6 +32,10 @@ const tecnologies = [
   {
     icon: <TbBrandNextjs />,
     name: "Next",
+  },
+  {
+    icon: <SiTypescript />,
+    name: "TypeScript",
   },
   {
     icon: <SiTailwindcss />,
