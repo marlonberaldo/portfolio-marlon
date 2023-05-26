@@ -37,9 +37,9 @@ export default function Footer() {
           <a href="https://github.com/marlonberaldo/" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
             <AiFillGithub />
           </a>
-          {/* <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
+          <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
             <AiFillInstagram />
-          </a> */}
+          </a>
         </div>
       </footer>
     </div>

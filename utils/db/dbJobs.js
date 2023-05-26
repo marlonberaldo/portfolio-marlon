@@ -31,19 +31,19 @@ export const bancoJobs = [
   //     <GrWordpress />
   //   ]
   // },
-  {
-    title: "Gasosa Institucional",
-    link: "https://gasosa-institucional.vercel.app",
-    image: "/images/jobs/gasosa-paranaense.png",
-    category: ["real"],
-    descricao: "Portugues baum",
-    description: "English good",
-    techs: [
-      <TbBrandNextjs />,
-      <SiTailwindcss />,
-      <GrWordpress />
-    ]
-  },
+  // {
+  //   title: "Gasosa Institucional",
+  //   link: "https://gasosa-institucional.vercel.app",
+  //   image: "/images/jobs/gasosa-paranaense.png",
+  //   category: ["real"],
+  //   descricao: "Portugues baum",
+  //   description: "English good",
+  //   techs: [
+  //     <TbBrandNextjs />,
+  //     <SiTailwindcss />,
+  //     <GrWordpress />
+  //   ]
+  // },
   {
     title: "Pool Leite",
     link: "https://pool-leite.vercel.app/",
@@ -68,6 +68,20 @@ export const bancoJobs = [
       <TbBrandNextjs />,
       <SiTailwindcss />,
       <GrWordpress />
+    ]
+  },
+  {
+    title: "DWG",
+    link: "https://dwg-nine.vercel.app/",
+    image: "/images/jobs/DWG.png",
+    category: ["teste", "cate"],
+    descricao: "Portugues baum",
+    description: "English good",
+    techs: [
+      <TbBrandNextjs />,
+      <SiTailwindcss />,
+      <GrWordpress />,
+      <SiTypescript />
     ]
   },
   {

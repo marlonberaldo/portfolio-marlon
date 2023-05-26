@@ -70,11 +70,11 @@ export default function Contato() {
               <a href="https://github.com/marlonberaldo/" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
                 <AiFillGithub />
               </a>
-              {/* <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
-                <AiFillInstagram />
-              </a> */}
               <a href={`https://wa.me/5542999721435?text=${lang ? pt.whatsApp : en.whatsApp}`} target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
                 <IoLogoWhatsapp />
+              </a>
+              <a href="https://instagram.com/marlon_beraldo" target="_blank" rel="noreferrer" className="hover:tw-text-white animation">
+                <AiFillInstagram />
               </a>
             </div>
             <div className="tw-h-[2px] tw-rounded-full tw-bg-gray-400 tw-w-[50px]"></div>
