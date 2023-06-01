@@ -15,7 +15,6 @@ module.exports = {
         "cinza": "#292C35",
         "marrom": "#E09145",
         "bege": "#FCD9B8",
-
       },
       animation: {
         'ping-slow': 'ping 3s linear infinite',

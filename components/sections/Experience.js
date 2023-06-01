@@ -52,10 +52,34 @@ const tecnologies = [
 ]
 
 export default function Experience() {
-  var inicio = new Date(2022, 9, 19).getMonth();
-
   const { lang } = useContext(LanguageContext)
   const [exp, setExp] = useState('exp');
+
+  function calculateDuration(startDate) {
+    const today = new Date();
+
+    const monthsDiff = (today.getFullYear() - startDate.getFullYear()) * 12 +
+      (today.getMonth() - startDate.getMonth());
+
+    const years = Math.floor(monthsDiff / 12);
+    const remainingMonths = monthsDiff % 12;
+
+    let result = "";
+
+    if (years === 0) {
+      result = `${remainingMonths}  ${lang ? 'meses' : 'months'}`;
+    } else if (remainingMonths === 0) {
+      result = `${years} ${lang ? 'ano(s)' : 'year(s)'}`;
+    } else {
+      result = `${years} ${lang ? " ano(s) e" : " year(s) and"} ${remainingMonths} ${lang ? "mes(s)" : "month(s)"}`;
+    }
+
+    return result;
+  }
+
+  const startDate = new Date(2022, 8, 19); // September 19, 2022
+  const duration = calculateDuration(startDate);
+
   return (
     <section className='tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-my-10 md:tw-my-20'>
       <div className='tw-flex tw-relative tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
@@ -100,7 +124,7 @@ export default function Experience() {
                 <span className='tw-text-white tw-font-black tw-mb-1 tw-leading-[110%]'>{lang ? pt.pages.index.experiencia.experiencia.ade.nome : en.pages.index.experiencia.experiencia.ade.nome}</span>
                 <div className='tw-flex tw-flex-col tw-items-center lg:tw-items-center'>
                   <span className='tw-leading-[110%] tw-text-sm'>{lang ? pt.pages.index.experiencia.experiencia.ade.cargo : en.pages.index.experiencia.experiencia.ade.cargo}</span>
-                  <span className='tw-leading-[110%] tw-text-sm'>({inicio} {lang ? 'meses' : 'months'})</span>
+                  <span className='tw-leading-[110%] tw-text-sm'>({duration})</span>
                 </div>
               </div>
 
@@ -108,7 +132,7 @@ export default function Experience() {
           </div>
         </div>
         {/* direita */}
-        <div className='tw-w-full lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-center tw-rounded-[30px] lg:tw-border-t-2 tw-border-b-2 lg:tw-border-b-0 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-bl tw-from-preto tw-to-cinza '>
+        <div className='tw-w-full tw-min-h-[400px] md:tw-min-h-[350px] lg:tw-w-[25%] tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-justify-center tw-rounded-[30px] lg:tw-border-t-2 tw-border-b-2 lg:tw-border-b-0 tw-border-marrom tw-shadow-xl tw-h-full tw-z-20 tw-bg-gradient-to-bl tw-from-preto tw-to-cinza '>
           <div className='tw-px-6 tw-py-8 md:tw-py-10 lg:tw-py-6 tw-w-full'>
             <div className={`${exp === 'exp' ? "tw-block" : "tw-hidden"} tw-flex tw-flex-col tw-items-center lg:tw-items-start`}>
               <span className='tw-text-xs -tw-mb-1'>{lang ? pt.pages.index.experiencia.qualificacao : en.pages.index.experiencia.qualificacao} &</span>

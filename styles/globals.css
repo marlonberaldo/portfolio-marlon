@@ -20,16 +20,37 @@
   }
 
   .botao {
-    @apply tw-border-2 tw-rounded-[15px] tw-font-bold tw-border-marrom tw-bg-marrom tw-px-4 tw-py-1 hover:tw-bg-transparent hover:tw-text-marrom animation;
+    @apply tw-border-2 tw-rounded-[15px] tw-font-semibold tw-border-marrom tw-bg-marrom tw-px-4 tw-py-1 hover:tw-bg-transparent hover:tw-text-marrom animation;
   }
 
   .animation{
     @apply tw-ease-out tw-duration-200;
   }
   .input{
-    @apply tw-rounded-[15px] tw-py-2 tw-px-5 tw-text-preto;
+    @apply tw-rounded-[15px] tw-py-2 tw-px-5 tw-text-white placeholder:tw-text-white tw-bg-marrom/10 tw-w-full !tw-z-50;
+  }
+  
+  .form-error{
+    @apply tw-ease-linear tw-duration-300 tw-bg-red-400 tw-text-white placeholder:tw-text-white !tw-z-50;
   }
 }
+
+@keyframes left-bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.left-bounce {
+  animation-name: left-bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 
 .borda_texto {
   -webkit-text-stroke-width: .5px;

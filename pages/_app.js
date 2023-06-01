@@ -3,6 +3,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import { LanguageProvider } from '../utils/context/language'
 import { ModalProvider } from '../utils/context/Modal'
+import { ToastContainer } from 'react-toastify'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <LanguageProvider>
+        <ToastContainer />
         <ModalProvider>
           <Component {...pageProps} />
         </ModalProvider>
