@@ -34,8 +34,14 @@ export default function About() {
       <div className='md:tw-w-[40%] tw-relative tw-flex tw-items-center tw-justify-center'>
         <div className='tw-h-[300px] lg:tw-h-[400px] tw-w-[300px] lg:tw-w-[400px] tw-absolute tw-bg-marrom tw-top-10 tw-opacity-60 tw-rounded-full tw-blur-2xl'></div>
         <div className='tw-relative md:tw-h-[400px] md:tw-w-[400px] tw-animate-avatar'>
-          <Image priority width={800} height={800} quality={100} src="/images/bichin.webp" alt="" />
-          {/* <img src="/images/bichin.webp" alt="" /> */}
+          <Image
+            src="/images/bichin.webp"
+            alt="Icone"
+            priority
+            width={800}
+            height={800}
+            quality={100}
+          />
         </div>
       </div>
       <div className='tw-w-full tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 tw-items-center tw-text-center'>

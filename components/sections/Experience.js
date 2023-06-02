@@ -7,10 +7,11 @@ import { FaHtml5, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { IoLogoJavascript, IoLogoCss3, IoLogoWhatsapp, IoLogoNodejs } from 'react-icons/io'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { SiPhp, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiPhp, SiTailwindcss, SiTypescript, SiMongodb } from 'react-icons/si'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const tecnologies = [
   {
@@ -46,13 +47,17 @@ const tecnologies = [
     name: "NodeJS",
   },
   {
+    icon: <SiMongodb />,
+    name: "MongoDB",
+  },
+  {
     icon: <SiPhp />,
     name: "PHP",
   },
 ]
 
 export default function Experience() {
-  const { lang } = useContext(LanguageContext)
+  const { lang } = useContext(LanguageContext);
   const [exp, setExp] = useState('exp');
 
   function calculateDuration(startDate) {
@@ -85,8 +90,15 @@ export default function Experience() {
       <div className='tw-flex tw-relative tw-flex-col-reverse lg:tw-flex-row tw-items-center tw-justify-center tw-gap-6 lg:tw-h-[400px]'>
         {/* esquerda */}
         <div className='tw-relative tw-group tw-overflow-hidden tw-flex tw-items-center tw-w-full lg:tw-w-[60%] tw-px-6 tw-py-8 md:tw-py-10 lg:tw-py-6 tw-rounded-[30px] tw-border-t-2 tw-border-marrom tw-shadow-xl tw-h-full tw-bg-gradient-to-br tw-from-preto tw-to-cinza tw-z-20'>
-          <img src="/images/mapbase.png" alt="" className='tw-opacity-[10%] group-hover:tw-opacity-[16%] tw-ease-linear tw-duration-300 tw-absolute tw-h-[50%] md:tw-h-full tw-w-full tw-object-cover md:tw-object-contain tw-left-0 tw-z-0' />
-          <div className='tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center lg:tw-items-start md:tw-justify-evenly tw-z-20'>
+          <div className='tw-opacity-[10%] group-hover:tw-opacity-[18%] tw-left-0 tw-z-0 tw-ease-linear tw-duration-300 tw-absolute tw-h-[50%] md:tw-h-full tw-w-full'>
+            <Image
+              src="/images/mapbase.png"
+              alt={`Mapbase`}
+              fill
+              sizes='(min-width: 768px) 90vw, 45vw'
+              className='tw-object-cover md:tw-object-contain' />
+          </div>
+          <div className='tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center lg:tw-items-start md:tw-justify-evenly tw-z-20 tw-gap-3'>
             <div className='tw-flex tw-flex-col'>
               <span className='tw-text-2xl tw-font-black tw-text-white tw-text-center'>{lang ? pt.pages.index.experiencia.DevWeb : en.pages.index.experiencia.DevWeb}</span>
               <div className="tw-grid tw-grid-cols-2 tw-gap-y-4 tw-py-2 md:tw-py-5 md:tw-px-2 tw-text-white">
@@ -170,15 +182,15 @@ export default function Experience() {
           <div className='tw-flex tw-items-center tw-justify-evenly tw-w-[40%] md:tw-w-[20%] lg:tw-w-[40%] tw-mx-auto tw-mb-8 lg:tw-mb-0'>
             <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
               <span className={`${exp === 'exp' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Exp</span>
-              <button onClick={() => setExp('exp')} className={`${exp === 'exp' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+              <button onClick={() => setExp('exp')} className={`${exp === 'exp' ? ' tw-bg-marrom' : 'tw-bg-gray-400 hover:tw-bg-bege/80'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[6px] tw-rounded-full`} />
             </div>
             <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
               <span className={`${exp === 'quali' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Quali</span>
-              <button onClick={() => setExp('quali')} className={`${exp === 'quali' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+              <button onClick={() => setExp('quali')} className={`${exp === 'quali' ? ' tw-bg-marrom' : 'tw-bg-gray-400 hover:tw-bg-bege/80'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[6px] tw-rounded-full`} />
             </div>
             <div className='tw-flex tw-flex-col tw-items-center tw-gap-[3px]'>
               <span className={`${exp === 'cont' ? "" : "tw-translate-y-4 -tw-z-10 tw-opacity-0"} tw-ease-linear tw-duration-200 tw-text-xs`}>Cont</span>
-              <button onClick={() => setExp('cont')} className={`${exp === 'cont' ? ' tw-bg-marrom' : 'tw-bg-gray-400'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[4px] tw-rounded-full`} />
+              <button onClick={() => setExp('cont')} className={`${exp === 'cont' ? ' tw-bg-marrom' : 'tw-bg-gray-400 hover:tw-bg-bege/80'} tw-ease-out tw-duration-200 tw-w-[30px] tw-h-[6px] tw-rounded-full`} />
             </div>
 
           </div>
