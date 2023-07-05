@@ -22,9 +22,10 @@ export default function App({ Component, pageProps }) {
             gtag('config', 'G-Y9ZM44HY45');`,
           }}
         />
+        <link rel="icon" type="image/png" href="/icone.png" />
       </Head>
+      <ToastContainer />
       <LanguageProvider>
-        <ToastContainer />
         <ModalProvider>
           <Component {...pageProps} />
         </ModalProvider>

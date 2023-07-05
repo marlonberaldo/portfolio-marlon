@@ -6,6 +6,7 @@ import HeaderFixo from "../components/HeaderFixo";
 import About from "../components/sections/About";
 import Experience from "../components/sections/Experience";
 import Jobs from "../components/sections/Jobs";
+import Contato from "../components/sections/Contato";
 
 import { LanguageContext } from "../utils/context/language";
 import { bancoJobs } from "../utils/db/dbJobs";
@@ -31,6 +32,7 @@ export default function Home() {
       <About />
       <Experience />
       <Jobs />
+      <Contato />
       <Footer />
     </>
   )

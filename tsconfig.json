@@ -22,8 +22,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/contato.js"  ],
+    "**/*.tsx",
+    "pages/contato.js"
+  ],
   "exclude": [
     "node_modules"
   ]

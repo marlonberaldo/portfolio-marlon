@@ -5,21 +5,6 @@ import { useContext, useEffect, useState } from 'react'
 import { LanguageContext } from '../../utils/context/language'
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi'
 import Image from 'next/image'
-const texto = `
-  const { lang, setLang } = useContext(LanguageContext);
-  const [burger, setBurger] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    const body = document.querySelector("body");
-    if (burger) {
-      body.style.overflowY = 'hidden';
-    } else {
-      body.style.overflowY = 'visible';
-    }
-  }, [burger])
-`
-
 export default function About() {
   const { lang } = useContext(LanguageContext);
   const [offsete, setOffsete] = useState(0);
@@ -44,7 +29,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className='tw-w-full tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 tw-items-center tw-text-center'>
+      <div className='tw-w-full tw-mx-auto md:tw-w-[50%] tw-flex tw-flex-col tw-mt-20 md:tw-mt-0 tw-items-center tw-text-center tw-group'>
         <div className='tw-relative tw-flex tw-justify-center'>
           <span className='tw-absolute borda_texto -tw-top-5 md:-tw-top-4 lg:-tw-top-4 tw-w-[90%] sm:tw-w-full md:tw-w-[90%] tw-opacity-20 tw-uppercase tw-z-10 tw-text-5xl tw-leading-[100%] tw-font-bold tw-text-center'>Marlon Beraldo</span>
           <span className='tw-uppercase tw-text-marrom tw-text-6xl tw-leading-[90%] tw-font-black tw-z-20'>Marlon Beraldo</span>
@@ -52,7 +37,7 @@ export default function About() {
         <p className='tw-text-lg tw-leading-[120%] lg:tw-text-xl tw-my-5'>
           {lang ? pt.pages.index.sobre.intro : en.pages.index.sobre.intro}
         </p>
-        <div className='tw-hidden md:tw-block tw-w-[200px] tw-h-[2px] tw-bg-white tw-rounded-full hover:-tw-translate-y-1 hover:tw-shadow-sm  tw-ease-linear tw-duration-200'></div>
+        <div className='tw-hidden md:tw-block tw-w-[200px] tw-h-[3px] tw-bg-white tw-rounded-full group-hover:-tw-translate-y-1 group-hover:tw-shadow-sm tw-ease-linear tw-duration-200'></div>
       </div>
       <i className={`${offsete > 30 ? "tw-opacity-0" : "tw-opacity-100"} tw-hidden lg:tw-block   tw-ease-linear tw-duration-200 tw-fixed tw-right-16 tw-bottom-16 tw-text-2xl tw-animate-bounce-slow`}>
         <HiOutlineArrowNarrowDown />

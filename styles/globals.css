@@ -4,11 +4,11 @@
 
 @layer base {
   html, body {
-    @apply tw-scroll-smooth tw-font-mono tw-text-gray-400 tw-bg-gradient-to-br tw-to-preto tw-from-cinza;
+    @apply !tw-scroll-smooth tw-font-mono tw-text-gray-400 tw-bg-gradient-to-br tw-to-preto tw-from-cinza;
   }
 
   .titulo {
-    @apply tw-text-xl md:tw-text-3xl tw-font-black;
+    @apply tw-text-xl tw-font-black md:tw-text-3xl;
   }
 
   .burger{
@@ -24,7 +24,7 @@
   }
 
   .animation{
-    @apply tw-ease-out tw-duration-200;
+    @apply tw-duration-200 tw-ease-out;
   }
   .input{
     @apply tw-rounded-[15px] tw-py-2 tw-px-5 tw-text-white placeholder:tw-text-white tw-bg-marrom/10 tw-w-full !tw-z-50;

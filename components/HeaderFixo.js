@@ -21,15 +21,15 @@ export default function HeaderFixo() {
           <span className="tw-text-bege">arlon.b</span>
           <span className="tw-text-marrom">{">"}</span>
         </a>
-        <div className="tw-gap-4 tw-hidden md:tw-flex tw-items-center">
-          <button className="tw-text-xs tw-group tw-flex tw-items-center tw-gap-2" onClick={() => setLang(!lang)}>
+        <div className="tw-items-center tw-hidden tw-gap-4 md:tw-flex">
+          <button className="tw-flex tw-items-center tw-gap-2 tw-text-xs tw-group" onClick={() => setLang(!lang)}>
             <span>{lang ? "PT-BR" : "EN-US"}</span>
             <BsTranslate />
           </button>
-          <a href="#" className="hover:tw-opacity-75 animation tw-text-sm tw-font-bold ">
+          <a href="#" className="tw-text-sm tw-font-bold hover:tw-opacity-75 animation ">
             Home
           </a>
-          <Link href="/contato" className="botao tw-text-sm tw-text-white">
+          <Link href="#contato" className="tw-text-sm tw-text-white botao">
             {lang ? "Contato" : "Contact"}
           </Link>
         </div>
