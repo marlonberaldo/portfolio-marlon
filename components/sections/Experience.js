@@ -10,6 +10,8 @@ import { TbBrandNextjs } from 'react-icons/tb'
 import { SiPhp, SiTailwindcss, SiTypescript, SiMongodb, SiSequelize } from 'react-icons/si'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
+import { GrGraphQl } from 'react-icons/gr'
+
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -47,8 +49,8 @@ const tecnologies = [
     name: "NodeJS",
   },
   {
-    icon: <SiSequelize />,
-    name: "Sequelize",
+    icon: <GrGraphQl />,
+    name: "GraphQl",
   },
   {
     icon: <SiMongodb />,

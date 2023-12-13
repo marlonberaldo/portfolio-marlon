@@ -1,8 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react"
 import { LanguageContext } from "../../utils/context/language"
 import emailjs from '@emailjs/browser';
-
-
 import pt from '../../lang/pt.json'
 import en from '../../lang/en.json'
 import { toast } from 'react-toastify';
@@ -11,8 +9,6 @@ import { useForm } from 'react-hook-form';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 
 import ReactLoading from "react-loading";
-
-
 
 export default function Contato() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -102,7 +98,7 @@ export default function Contato() {
               </i>
             </div>
             {loading ? (
-              <div className={`botao tw-mx-auto tw-w-full tw-mt-4 tw-text-white tw-flex tw-justify-center tw-items-center ${loading ? "tw-pointer-events-none" : ""}`}>
+              <div className={`botao tw-mx-auto tw-w-full tw-mt-4 tw-text-white tw-flex tw-justify-center tw-items-center tw-h-[50px] ${loading ? "tw-pointer-events-none" : ""}`}>
                 <ReactLoading
                   className="tw-flex tw-items-center"
                   color="#fff"
@@ -112,7 +108,7 @@ export default function Contato() {
                 />
               </div>
             ) : (
-              <button disabled={loading} type="submit" className="tw-w-full tw-mx-auto tw-mt-4 tw-text-white botao">
+              <button disabled={loading} type="submit" className="tw-w-full tw-mx-auto tw-mt-4 tw-text-white botao tw-h-[50px]">
                 {lang ? pt.pages.contato.botao : en.pages.contato.botao}
               </button>
             )}

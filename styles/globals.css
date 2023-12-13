@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+
+  html,
+  body {
     @apply !tw-scroll-smooth tw-font-mono tw-text-gray-400 tw-bg-gradient-to-br tw-to-preto tw-from-cinza;
   }
 
@@ -11,34 +13,38 @@
     @apply tw-text-xl tw-font-black md:tw-text-3xl;
   }
 
-  .burger{
+  .burger {
     @apply tw-border tw-h-[4px] tw-bg-transparent tw-ease-out tw-duration-300;
   }
 
-  .burger-clicado{
+  .burger-clicado {
     @apply tw-border tw-h-[4px] tw-bg-white tw-ease-out tw-duration-300;
   }
 
   .botao {
-    @apply tw-border-2 tw-rounded-[15px] tw-font-semibold tw-border-marrom tw-bg-marrom tw-px-4 tw-py-1 hover:tw-bg-transparent hover:tw-text-marrom animation;
+    @apply tw-border-2 tw-rounded-[15px] tw-font-semibold tw-border-marrom tw-bg-marrom tw-px-4 hover:tw-bg-transparent hover:tw-text-marrom animation;
   }
 
-  .animation{
+  .animation {
     @apply tw-duration-200 tw-ease-out;
   }
-  .input{
+
+  .input {
     @apply tw-rounded-[15px] tw-py-2 tw-px-5 tw-text-white placeholder:tw-text-white tw-bg-marrom/10 tw-w-full !tw-z-50;
   }
-  
-  .form-error{
+
+  .form-error {
     @apply tw-ease-linear tw-duration-300 tw-bg-red-400 tw-text-white placeholder:tw-text-white !tw-z-50;
   }
 }
 
 @keyframes left-bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-10px);
   }

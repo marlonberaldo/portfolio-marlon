@@ -2,40 +2,15 @@
 import { TbBrandNextjs } from 'react-icons/tb'
 import { RiReactjsLine } from 'react-icons/ri'
 import { SiTailwindcss, SiTypescript } from 'react-icons/si'
-import { GrWordpress } from 'react-icons/gr'
+import { GrWordpress, GrGraphQl } from 'react-icons/gr'
+
 
 export const bancoJobs = [
-  {
-    title: "Rent a Car",
-    link: "https://rent-a-car-frontend.vercel.app/",
-    image: "/images/jobs/rentacar.png",
-    category: ["real", "teste"],
-    descricao: "Portugues baum",
-    description: "English good",
-    techs: [
-      <TbBrandNextjs />,
-      <SiTailwindcss />,
-      <GrWordpress />
-    ]
-  },
   // {
-  //   title: "Gasosa Paranaese",
-  //   link: "https://gasosa-paranaense.vercel.app/",
-  //   image: "/images/jobs/gasosa.png",
-  //   category: ["real", "cate"],
-  //   descricao: "Portugues baum",
-  //   description: "English good",
-  //   techs: [
-  //     <RiReactjsLine />,
-  //     <SiTailwindcss />,
-  //     <GrWordpress />
-  //   ]
-  // },
-  // {
-  //   title: "Gasosa Institucional",
-  //   link: "https://gasosa-institucional.vercel.app",
-  //   image: "/images/jobs/gasosa-paranaense.png",
-  //   category: ["real"],
+  //   title: "Rent a Car",
+  //   link: "https://rent-a-car-frontend.vercel.app/",
+  //   image: "/images/jobs/rentacar.png",
+  //   category: ["real", "teste"],
   //   descricao: "Portugues baum",
   //   description: "English good",
   //   techs: [
@@ -44,32 +19,19 @@ export const bancoJobs = [
   //     <GrWordpress />
   //   ]
   // },
-  {
-    title: "Pool Leite",
-    link: "https://pool-leite.vercel.app/",
-    image: "/images/jobs/pool-leite.png",
-    category: ["cate"],
-    descricao: "Portugues baum",
-    description: "English good",
-    techs: [
-      <TbBrandNextjs />,
-      <SiTailwindcss />,
-      <GrWordpress />
-    ]
-  },
-  {
-    title: "Vitalle",
-    link: "https://vitalle-psi.vercel.app/",
-    image: "/images/jobs/vitalle.png",
-    category: ["cate"],
-    descricao: "Portugues baum",
-    description: "English good",
-    techs: [
-      <TbBrandNextjs />,
-      <SiTailwindcss />,
-      <GrWordpress />
-    ]
-  },
+  // {
+  //   title: "Vitalle",
+  //   link: "https://vitalle-psi.vercel.app/",
+  //   image: "/images/jobs/vitalle.png",
+  //   category: ["cate"],
+  //   descricao: "Portugues baum",
+  //   description: "English good",
+  //   techs: [
+  //     <TbBrandNextjs />,
+  //     <SiTailwindcss />,
+  //     <GrWordpress />
+  //   ]
+  // },
   {
     title: "DWG",
     link: "https://dwg-nine.vercel.app/",
@@ -96,6 +58,51 @@ export const bancoJobs = [
       <SiTailwindcss />,
       <GrWordpress />,
       <SiTypescript />
+    ]
+  },
+  {
+    title: "Posto Guapo",
+    link: "https://posto-guapo.vercel.app/",
+    image: "/images/jobs/Guapo.png",
+    category: ["teste", "cate"],
+    descricao: "Portugues baum",
+    description: "English good",
+    techs: [
+      <TbBrandNextjs />,
+      <SiTailwindcss />,
+      <SiTypescript />,
+      <GrGraphQl />,
+      <GrWordpress />,
+    ]
+  },
+  {
+    title: "Grupo Projese",
+    link: "https://projese.vercel.app/",
+    image: "/images/jobs/Projese.png",
+    category: ["teste", "cate"],
+    descricao: "Portugues baum",
+    description: "English good",
+    techs: [
+      <TbBrandNextjs />,
+      <SiTailwindcss />,
+      <SiTypescript />,
+      <GrGraphQl />,
+      <GrWordpress />,
+    ]
+  },
+  {
+    title: "Watanabe",
+    link: "https://watanabe.com.br/",
+    image: "/images/jobs/Watanabe.png",
+    category: ["teste", "cate"],
+    descricao: "Portugues baum",
+    description: "English good",
+    techs: [
+      <TbBrandNextjs />,
+      <SiTailwindcss />,
+      <SiTypescript />,
+      <GrGraphQl />,
+      <GrWordpress />,
     ]
   },
 ]
