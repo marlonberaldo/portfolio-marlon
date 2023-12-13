@@ -42,7 +42,7 @@ export default function Jobs() {
                   <div className="tw-flex tw-gap-3 tw-my-1 tw-text-xl tw-text-white tw-duration-200 tw-ease-linear tw-opacity-0 group-hover:tw-opacity-100 md:tw-ease-out md:tw-duration-200">
                     {j.techs}
                   </div>
-                  <span className="tw-flex tw-items-center tw-gap-1 tw-text-xs tw-text-white tw-duration-200 tw-ease-linear tw-opacity-0 group-hover:tw-opacity-100 md:tw-ease-out md:tw-duration-200">Design by <a href="https://agenciaade.com.br" target="_blank" rel="noreferrer" className='hover:tw-opacity-80 animation'>agenciaade.com.br</a></span>
+                  <span className="tw-flex tw-items-center tw-gap-1 tw-text-xs tw-text-white tw-duration-200 tw-ease-linear tw-opacity-0 group-hover:tw-opacity-100 md:tw-ease-out md:tw-duration-200">Design by {j.designBy || "Agência Ade!"}</span>
                 </div>
               </div>
             )
