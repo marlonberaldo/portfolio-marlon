@@ -14,6 +14,7 @@ import Image from 'next/image'
 export default function Jobs() {
   const { lang } = useContext(LanguageContext);
   const [qtde, setQtde] = useState(5);
+
   return (
     <section className="tw-max-w-[1280px] tw-w-[90%] md:tw-w-[90%] lg:tw-w-full tw-mx-auto tw-flex tw-flex-col tw-items-center">
       <div className='tw-flex tw-flex-col tw-items-center'>
