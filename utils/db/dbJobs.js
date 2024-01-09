@@ -78,7 +78,7 @@ export const bancoJobs = [
   {
     title: "Grupo Projese",
     designBy: "Essenciall Mídia",
-    link: "https://projese.vercel.app/",
+    link: "https://projese.com.br",
     image: "/images/jobs/Projese.png",
     category: ["teste", "cate"],
     descricao: "Portugues baum",
