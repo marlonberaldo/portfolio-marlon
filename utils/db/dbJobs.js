@@ -61,9 +61,10 @@ export const bancoJobs = [
     ]
   },
   {
-    title: "Posto Guapo",
-    link: "https://posto-guapo.vercel.app/",
-    image: "/images/jobs/Guapo.png",
+    title: "Grupo Projese",
+    designBy: "Essenciall Mídia",
+    link: "https://projese.com.br",
+    image: "/images/jobs/Projese.png",
     category: ["teste", "cate"],
     descricao: "Portugues baum",
     description: "English good",
@@ -76,10 +77,9 @@ export const bancoJobs = [
     ]
   },
   {
-    title: "Grupo Projese",
-    designBy: "Essenciall Mídia",
-    link: "https://projese.com.br",
-    image: "/images/jobs/Projese.png",
+    title: "Agência Ade!",
+    link: "https://agenciaade.com.br",
+    image: "/images/jobs/AgenciaAde.png",
     category: ["teste", "cate"],
     descricao: "Portugues baum",
     description: "English good",
